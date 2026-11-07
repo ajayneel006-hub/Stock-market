@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoro Trader - Stock Market & Analysis Educator</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: #070a12;
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px 15px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 440px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Top Pill Badge */
+        .top-badge {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 50px;
+            padding: 8px 18px;
+            font-size: 11px;
+            letter-spacing: 1.2px;
+            color: #94a3b8;
+            font-weight: 600;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+        }
+
+        /* Avatar styling with glow */
+        .avatar-container {
+            position: relative;
+            width: 170px;
+            height: 170px;
+            margin-bottom: 20px;
+        }
+
+        .avatar-glow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background: radial-gradient(circle, rgba(56, 189, 248, 0.4) 0%, rgba(245, 158, 11, 0.4) 100%);
+            filter: blur(15px);
+            animation: pulse 3s infinite alternate;
+        }
+
+        .avatar-img {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #38bdf8;
+            box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(0.95); opacity: 0.6; }
+            100% { transform: scale(1.05); opacity: 0.9; }
+        }
+
+        /* Category Badge */
+        .category-badge {
+            background: linear-gradient(135deg, #d97706 0%, #b45309 100%);
+            color: #ffffff;
+            font-size: 13px;
+            font-weight: 700;
+            padding: 6px 18px;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 4px 12px rgba(217, 119, 6, 0.3);
+            text-transform: uppercase;
+        }
+
+        .sub-header {
+            color: #38bdf8;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+        }
+
+        /* Main Heading */
+        .main-title {
+            font-size: 26px;
+            font-weight: 800;
+            line-height: 1.3;
+            margin-bottom: 15px;
+            color: #ffffff;
+        }
+
+        .highlight-text {
+            color: #f59e0b;
+        }
+
+        /* Features/Description */
+        .description {
+            color: #94a3b8;
+            font-size: 14px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        /* Telegram CTA Button */
+        .cta-button {
+            width: 100%;
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 17px;
+            font-weight: 700;
+            padding: 16px 20px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+            transition: all 0.3s ease;
+            margin-bottom: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 30px rgba(37, 99, 235, 0.6);
+        }
+
+        .cta-button:active {
+            transform: translateY(0);
+        }
+
+        /* Trust Signals */
+        .trust-info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            font-size: 13px;
+            color: #94a3b8;
+            margin-bottom: 30px;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 6px;
+        }
+
+        /* Footer / Disclaimer */
+        .divider {
+            width: 100%;
+            height: 1px;
+            background: rgba(255, 255, 255, 0.08);
+            margin-bottom: 20px;
+        }
+
+        .disclaimer {
+            font-size: 11px;
+            color: #64748b;
+            line-height: 1.5;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Top Tagline -->
+        <div class="top-badge">
+            RESEARCH & MARKET EDUCATION • TRADING COMMUNITY
+        </div>
+
+        <!-- Avatar Section -->
+        <div class="avatar-container">
+            <div class="avatar-glow"></div>
+            <img src="https://i.ibb.co/xqgv0h20/IMG-20261106-215701-202.jpg" alt="Zoro Trader Profile" class="avatar-img">
+        </div>
+
+        <!-- Category Badge -->
+        <div class="category-badge">
+            ✓ MARKET EDUCATOR
+        </div>
+
+        <div class="sub-header">
+            STOCK MARKET & ANALYSIS EDUCATOR
+        </div>
+
+        <!-- Main Title -->
+        <h1 class="main-title">
+            Learn Stock Market & Analysis with <span class="highlight-text">ZORO TRADER</span>
+        </h1>
+
+        <!-- Feature List -->
+        <p class="description">
+            Daily Market Analysis • Nifty & Bank Nifty • Educational Insights & Learning Modules
+        </p>
+
+        <!-- CTA Button -->
+        <a href="https://t.me/+1W3KmlTIpFMxZjQ1" target="_blank" class="cta-button">
+            ✈ Join Telegram Community — Free
+        </a>
+
+        <!-- Trust Signals -->
+        <div class="trust-info">
+            <div class="trust-item">
+                🔒 Instant Free Access — 100% Educational Content
+            </div>
+            <div class="trust-item">
+                👥 Join our growing 50,000+ trading community
+            </div>
+        </div>
+
+        <div class="divider"></div>
+
+        <!-- SEBI Disclaimer -->
+        <div class="disclaimer">
+            <strong>Disclaimer:</strong> Yeh page sirf educational aur research purpose ke liye hai. Hum SEBI registered analyst nahi hain. Stock market mein trading aur investment karna jokhim bhara ho sakta hai. Koi bhi financial decision lene se pehle apne financial advisor se salah zaroor lein.
+        </div>
+    </div>
+
+</body>
+</html>
